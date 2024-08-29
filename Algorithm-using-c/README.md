@@ -1,17 +1,18 @@
 # BFS Algorithm :
 
 
-Step 1: SET STATUS = 1 (ready state) for each node in G
+Step 1: SET STATE = UNVISITED (value = 1) for each node in GRAPH.
 
-Step 2: Enqueue the starting node A and set its STATUS (waiting state) = 2
+Step 2: Add the starting node START_NODE to the QUEUE and set its STATE = IN_QUEUE (value = 2).
 
-Step 3: Repeat Steps 4 and 5 until QUEUE is empty
+Step 3: Repeat Steps 4 and 5 until the QUEUE is empty.
 
-Step 4: Dequeue a node N. Process it and set its STATUS (processed state). = 3
+Step 4: Remove the front node CURRENT_NODE from the QUEUE, process it, and set its STATE = PROCESSED (value = 3).
 
-Step 5: Enqueue all the neighbours of N that are in the ready state (whose STATUS = 1) and set their STATUS = (waiting state) [END OF LOOP] 2
+Step 5: Add all NEIGHBORS of CURRENT_NODE that are in the UNVISITED state (value = 1) to the QUEUE and set their STATE = IN_QUEUE (value = 2).
+[END OF LOOP]
 
-Step 6: EXIT
+Step 6: EXIT.
 
 ![download](https://github.com/user-attachments/assets/76f7c200-2a88-4f60-a8c4-b18f2c1b4b19)
 
